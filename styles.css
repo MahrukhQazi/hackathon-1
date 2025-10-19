@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  height: 80px;
+  padding: 0 60px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.im img {
+  height: 60px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: blueviolet;
+}
+/* contact seection  */
+/* contact section */
+.c {
+  background-image: url(https://img.freepik.com/premium-photo/man-holding-car-keys-front-car-background_64235-2024.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.cc {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 40px;
+  width: 500px;
+}
+
+.cc button {
+  background-color: aqua;
+  color: white;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.cc button a {
+  color: white;
+  text-decoration: none;
+}
+
+.cc button:hover {
+  background-color: brown;
+}
+
+/* contact form inside */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1em;
+}
+
+.contact-form button {
+  background-color: palevioletred;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: brown;
+}
+/* ===== CTA Section ===== */
+.cta {
+  background-color: darksalmon;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.cta h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.cta p {
+  margin-bottom: 20px;
+  font-size: 1.1em;
+}
+
+.cta-btn {
+  background-color: aqua;
+  color: #007bff;
+  border: none;
+  padding: 12px 25px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #e6e6e6;
+}
+
+/* ===== Footer ===== */
+.footer {
+  background-color: white;
+  padding: 80px 60px 40px;
+  color: #333;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-box h3 {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.footer-box p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.footer-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-box ul li {
+  margin-bottom: 10px;
+}
+
+.footer-box ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 0.95em;
+}
+
+.footer-box ul li a:hover {
+  color: #007bff;
+}
+
+/* Social Icons */
+.social a {
+  color: white;
+  background-color: #007bff;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.social a:hover {
+  background-color: #0056b3;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-box {
+    text-align: center;
+  }
+
+  .social a {
+    margin-right: 8px;
+  }
+}
+
